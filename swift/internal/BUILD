@@ -435,6 +435,11 @@ config_setting(
 )
 
 config_setting(
+    name = "catalyst_arm64",
+    values = {"cpu": "catalyst_arm64"},
+)
+
+config_setting(
     name = "darwin",
     values = {"cpu": "darwin"},
 )
@@ -528,6 +533,7 @@ selects.config_setting_group(
     name = "apple",
     match_any = [
         ":catalyst_x86_64",
+        ":catalyst_arm64",
         ":darwin",
         ":darwin_arm64",
         ":darwin_x86_64",

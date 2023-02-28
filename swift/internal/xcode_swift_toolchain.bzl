@@ -71,6 +71,7 @@ load(
 _TRIPLE_OS_TO_PLATFORM = {
     ("ios", None): apple_common.platform.ios_device,
     ("ios", "simulator"): apple_common.platform.ios_simulator,
+    ("ios", "macabi"): apple_common.platform.catalyst,
     ("macos", None): apple_common.platform.macos,
     ("tvos", None): apple_common.platform.tvos_device,
     ("tvos", "simulator"): apple_common.platform.tvos_simulator,
